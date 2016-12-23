@@ -63,12 +63,12 @@ var Monthpicker = function(selector, options){
             }
         }
     }
-    self.prevYear = function(){
+    self.prevYear = function(event){
         event.stopPropagation();
 
         self.showYear(self.currentYear - 1);
     }
-    self.nextYear = function(){
+    self.nextYear = function(event){
         event.stopPropagation();
 
         self.showYear(self.currentYear + 1);
